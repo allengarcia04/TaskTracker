@@ -14,7 +14,7 @@ User-specific task management
 ![image](https://github.com/allengarcia04/TaskTracker/assets/154303616/6e3d069a-51f0-4ab0-afc9-e1ba5b28cf7b)
 ![image](https://github.com/allengarcia04/TaskTracker/assets/154303616/48633d5a-5e17-4622-a6c0-77381454dea1)
 
-#Technologies Used
+# Technologies Used
 Backend: Python, Flask, SQLAlchemy
 Frontend: HTML, CSS, JavaScript
 Other: Flask-Login for authentication, SQLite for the database
@@ -27,19 +27,19 @@ Virtual environment tool (optional but recommended)
 Installation Steps
 1. Clone the repository: git clone https://github.com/allengarcia04/TaskTracker
 2. Navigate to the project directory:
-cd TaskTracker
+`cd TaskTracker`
 4. Create and activate a virtual environment (optional but recommended):
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+`python -m venv venv`
+`source venv/bin/activate`  # On Windows use `venv\Scripts\activate`
 5. Install dependencies:
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 7. Set up the database:
 Ensure the DB_NAME in website/__init__.py is set to database.db. Then, run the following commands to create the database: flask shell
-from website import db
+`from website import db
 db.create_all()
-exit()
+exit()`
 8. Run the flask server:
-flask run
+`flask run`
 10. Open your web browser and navigate to http://127.0.0.1:5000.
 
 # Usage
