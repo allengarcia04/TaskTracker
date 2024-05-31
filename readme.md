@@ -15,9 +15,9 @@ User-specific task management
 ![image](https://github.com/allengarcia04/TaskTracker/assets/154303616/48633d5a-5e17-4622-a6c0-77381454dea1)
 
 # Technologies Used
-Backend: Python, Flask, SQLAlchemy
-Frontend: HTML, CSS, JavaScript
-Other: Flask-Login for authentication, SQLite for the database
+- **Backend**: Python, Flask, SQLAlchemy
+- **Frontend**: HTML, CSS, JavaScript
+- **Other**: Flask-Login for authentication, SQLite for the database
 
 # Installation and Setup
 Prerequisites
