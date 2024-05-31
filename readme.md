@@ -42,12 +42,12 @@ exit()`
 `flask run`
 10. Open your web browser and navigate to http://127.0.0.1:5000.
 
-# Usage
-Sign Up: Register a new account.
-Sign In: Log in to your account.
-Add Tasks: Create new tasks to manage.
-Delete Tasks: Remove tasks that are no longer needed.
-Log Out: Sign out of your account when done.
+## Usage
+1. Sign Up: Register a new account.
+2. Sign In: Log in to your account.
+3. Add Tasks: Create new tasks to manage.
+4. Delete Tasks: Remove tasks that are no longer needed.
+5. Log Out: Sign out of your account when done.
 
 
 
