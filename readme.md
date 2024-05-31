@@ -1,49 +1,70 @@
-How it works:
+# TaskTracker
+Get ready to boost your productivity and stay on top of your to-do list. TaskTracker simplifies task management, helping you focus on what matters most. Sign in now to get started! TaskTracker allows users to sign up, sign in, add and delete tasks, and log out.
 
-1. main.py:
-   -Entry point of the application.
-   -Creates an instance of the Flask app using the create_app function from the website package.
-   -Runs the app in debug mode if executed directly.
+## Motivation
+TaskTracker was born out of my personal journey when I migrated to Australia. I embarked on a mission to earn a Master's degree in Business Information Systems and secure a software engineering job. Upon arriving, I faced the challenge of managing numerous aspirations. The lack of organization prompted me to create TaskTracker, a solution that allows me to write, add, and track my goals efficiently. This project is designed to bring order to the chaos, enabling users to navigate their tasks, goals and achieve success.
 
-2. **init**.py:
-   -Initializes the Flask app, SQLAlchemy for database management, and Flask-Login for user authentication.
-   -Registers blueprints (views and auth) to organize routes.
-   -Creates necessary database tables.
-   -Configures Flask-Login to manage user sessions.
+## Features
+User registration and login
+Task creation and deletion
+User authentication (sign in, sign out)
+User-specific task management
 
-3. views.py:
-   -Contains routes and views related to the main functionality of the application.
-   -home() displays the home page where users can view, add, and delete notes.
-   -delete_note() handles the deletion of notes via a POST request.
+# ScreenShots
+![image](https://github.com/allengarcia04/TaskTracker/assets/154303616/6e3d069a-51f0-4ab0-afc9-e1ba5b28cf7b)
+![image](https://github.com/allengarcia04/TaskTracker/assets/154303616/48633d5a-5e17-4622-a6c0-77381454dea1)
 
-4. auth.py:
-   -Manages user authentication and related routes.
-   -login(), logout(), and sign_up() handle user login, logout, and sign-up, respectively.
+#Technologies Used
+Backend: Python, Flask, SQLAlchemy
+Frontend: HTML, CSS, JavaScript
+Other: Flask-Login for authentication, SQLite for the database
 
-5. models.py:
-   -Defines the structure of the database using SQLAlchemy.
-   -Contains User and Note models with relationships between them.
+# Installation and Setup
+Prerequisites
+Python 3.11 or later
+Pip (Python package installer)
+Virtual environment tool (optional but recommended)
+Installation Steps
+1. Clone the repository: git clone https://github.com/allengarcia04/TaskTracker
+2. Navigate to the project directory:
+cd TaskTracker
+4. Create and activate a virtual environment (optional but recommended):
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+5. Install dependencies:
+pip install -r requirements.txt
+7. Set up the database:
+Ensure the DB_NAME in website/__init__.py is set to database.db. Then, run the following commands to create the database: flask shell
+from website import db
+db.create_all()
+exit()
+8. Run the flask server:
+flask run
+10. Open your web browser and navigate to http://127.0.0.1:5000.
 
-6. base.html:
-   -The base template for other HTML files to extend.
-   -Defines the common structure, navigation bar, and includes necessary CSS and JavaScript libraries.
-   -Handles displaying flashed messages (alerts) and defines blocks for content and additional JavaScript.
+# Usage
+Sign Up: Register a new account.
+Sign In: Log in to your account.
+Add Tasks: Create new tasks to manage.
+Delete Tasks: Remove tasks that are no longer needed.
+Log Out: Sign out of your account when done.
 
-7. login.html:
-   -Extends base.html and provides a form for user login.
 
-8. sign_up.html:
-   Extends base.html and provides a form for user registration.
 
-9. home.html:
-   -Extends base.html and displays user notes along with a form to add new notes.
 
-10. JavaScript (in base.html):
-    -Provides a function (deleteNote()) for asynchronous note deletion.
 
-Interaction Flow:
--Users interact with the application through the routes defined in views.py and auth.py.
--Authentication is managed by Flask-Login, and user data is stored in the database.
--Views access the database to retrieve and manipulate user notes.
--Templates, especially base.html, provide a common structure and handle the display of messages and dynamic content.
--The project follows a standard Flask architecture with separate files for routes, templates, models, and static content. The application's core functionality revolves around managing user notes, authentication, and displaying relevant views.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
